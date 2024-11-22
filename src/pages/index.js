@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,7 +38,7 @@ export default function Home() {
           />
           <ol>
             <li>
-              Get started by editing <code>src/pages/index.js</code>.
+            Read my <Link href="/posts/first-post"> first post</Link>
             </li>
             <li>Save and see your changes instantly.</li>
           </ol>
